@@ -15,4 +15,6 @@ currentDrivers = ('alonso', 'max_verstappen', 'piastri', 'norris', 'leclerc', 's
 
 print(currentDrivers)
 
-df_drivers.loc[:,"driverRef"]
+for i in currentDrivers:
+    if (i == df_drivers.loc[:,"driverRef"]).any():
+        print(i)
